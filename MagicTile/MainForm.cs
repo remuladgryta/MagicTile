@@ -330,6 +330,7 @@
 		/// </summary>
 		private static void SetLabelColumnWidth( PropertyGrid grid )
 		{
+			/*
 			FieldInfo gridViewFieldInfo = typeof( PropertyGrid ).GetField( "gridView",
 				BindingFlags.Instance | BindingFlags.NonPublic );
 			object propertyGridView = gridViewFieldInfo.GetValue( grid );
@@ -337,6 +338,7 @@
 			FieldInfo labelRatioFieldInfo = propertyGridView.GetType().GetField( "labelRatio", 
 				BindingFlags.Instance | BindingFlags.Public );
 			labelRatioFieldInfo.SetValue( propertyGridView, 1.5 );
+			*/
     	}
 
 		private void UpdateStatus()

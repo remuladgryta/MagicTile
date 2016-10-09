@@ -50,12 +50,12 @@
 		{
 			get
 			{
-				string dir = Path.Combine( ".\\", config );
+				string dir = Path.Combine( "./", config );
 				if( Directory.Exists( dir ) )
 					return dir;
 				
 				// Diff directory for development.
-				return Path.Combine( "..\\..\\", config );
+				return Path.Combine( "../../", config );
 			}
 		}
 
